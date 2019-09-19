@@ -1,0 +1,15 @@
+<html>
+  <form >
+    <label style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" id="c"> Calculator <br></label><br><br><br>
+    <input type="number" name="num1" [(ngModel)]="num1"><br><br>
+    <input type="number" name="num2" [(ngModel)]="num2"><br><br><br><br>
+    <input type="radio" name="opt" (click)="add()"><b> Add </b>
+    <input type="radio" name="opt" (click)="sub()"><b> Subtract </b>  
+    <input type="radio" name="opt" (click)="mul()"><b> Multiply </b>  
+    <input type="radio" name="opt" (click)="div()"><b> Divide </b>  
+    <p style="color: rgb(4, 0, 255)">{{ num1 }} {{op}} {{ num2}} = {{val}}</p>
+    <app-first></app-first>
+    <app-second-component></app-second-component>
+    
+  </form>
+</html>
